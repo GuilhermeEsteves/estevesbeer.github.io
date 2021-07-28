@@ -13,7 +13,7 @@
 	<div class="div-product">
     <img class="product-image" src="./images/Devassa - Lata 350ml.png" alt="">
 	</div>
-  <button class="btn" on-click="https://wa.me/5516988580442">Fale conosco</button>
+  <button class="btn" onclick="callWhatsapp();">Fale conosco</button>
 </body>
 </html>
 
@@ -50,3 +50,10 @@
     cursor: pointer;
   }
 </style>
+
+<script>
+  function callWhatsapp() {
+    const number = 5516988580442;
+    window.open(`https://wa.me/${number}?text=`, '_blank');
+  }
+</script>
